@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#"><i class="fas fa-laptop-code"></i></a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">Habilidades</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PROYECTOS</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+               <img src="img/perfil.png" alt="">
+            </div>
+            <h1>Johan Quintero Grisales</h1>
+            <h2>Desarrollador Frontend</h2>
+            <div class="redes">
+                <a href="https://github.com/RengoQG"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/johan-quintero-grisales-532275259/"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span class="text-info">¡Hola! Soy Johan Quintero,</span> un apasionado desarrollador con amplio conocimiento en el backend y en el fronend con un sólido año de experiencia en el desarrollo de aplicaciones orientadas a objetos (POO) utilizando Java, así como en la creación de servicios web RESTful mediante la tecnología JAX-RS. Mi trayectoria abarca una amplia variedad de proyectos, desde la creación de servicios hasta la exitosa migración de sistemas utilizando Spring Boot.
+
+                Además, cuento con una experiencia efectiva en el uso de JavaScript, HTML5 y CSS3, así como en la implementación de React para crear interfaces de usuario atractivas y funcionales. En el ámbito de JavaScript, me destaco por consumir APIs de manera eficiente mediante el uso de funciones asíncronas.
+                
+                Estoy emocionado por los desafíos que enfrento en el mundo del desarrollo y siempre estoy buscando nuevas oportunidades para mejorar mis habilidades y contribuir al éxito de los proyectos en los que participo. ¡Espero poder aportar mi pasión y conocimientos a tu equipo! </p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Teléfono</strong>
+                            3172124655
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            johanquinterogrisales@gmail.com
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Desarrollador Frontend</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Herramientas -->
+                <div class="col">
+                    <h3>Herramientas</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fas fa-leaf"></i>
+                            <span>Spring Boot</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-css3"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>TypeScript</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-react"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-github"></i>
+                            <span>Github</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Habilidades tecnicas</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>TypeScript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>React</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML5 & CSS3</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Spring Boot</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Github</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Habilidades  personales -->
+                <div class="col">
+                    <h3>Habilidades  personales</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Adaptación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Tecnologo en Análisis y desarrollo de sistemas de la información</h4>
+                        <span class="casa">SENA</span>
+                        <span class="fecha">2020 - 2022</span>
+                        <p>.Lenguajes como Java, JavaScript, PHP, Python,  HTML5, CSS
+                            .Preprocesadores como SCSS y TypeScript
+                            .Framework como Laravel, Django, .NET y Angular
+                            .Base de datos como SQL SERVER, Oracle y MySQL</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Analista desarrollo </h3>
+                    <div class="item der">
+                        <h4>Software developer</h4>
+                        <span class="casa">Amelissa</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>Como Analista de Desarrollo en Amelissa, lideré la toma de requerimientos, diseño y creación de soluciones, así como la migración de tecnologías Flash con SpringBoot. En este rol, he trabajado de manera integral en el desarrollo de aplicaciones, desempeñándome tanto en el backend como en el frontend.
+
+                            He utilizado Spring Boot para desarrollar robustos servicios backend que impulsan nuestras aplicaciones. La flexibilidad y escalabilidad que ofrece Spring Boot han sido clave para crear sistemas sólidos y eficientes. Además, he trabajado en la creación de servicios web RESTful, aprovechando la tecnología JAX-RS para garantizar la comunicación efectiva entre nuestros componentes.
+                            
+                            Para la capa frontend, he empleado JavaScript, HTML5, CSS3 y React de manera efectiva para consumir estos servicios y crear interfaces de usuario dinámicas y altamente interactivas. Esta combinación de tecnologías ha permitido que nuestras aplicaciones ofrezcan una experiencia de usuario excepcional y eficiente.
+                            
+                            Mi compromiso como programador es absoluto, y estoy siempre dispuesto a enfrentar nuevos desafíos tecnológicos con pasión y dedicación. Estoy firmemente convencido de que mi experiencia y habilidades no solo son valiosas en la actualidad, sino que también poseen un potencial constante de mejora y crecimiento.
+                            </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PROYECTOS -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>Proyectos</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/HTML.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Página web responsive</h3>
+                        <p>Tecnologías: HTML3 - CSS3</p>
+                        <a class="text-white" href="https://github.com/RengoQG/P-gina-de-prueba" target="_blank" rel="noopener noreferrer">
+                            Ver en GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/REACT.jpg" alt="Vista previa del proyecto">
+                    <div class="overlay">
+                        <h3>Sistema de encuestas</h3>
+                        <p>Tecnologías: Node.js - React - HTML5 - CSS3 - Bootstrap 5</p>
+                        <a class="text-white" href="https://github.com/RengoQG/REACT" target="_blank" rel="noopener noreferrer">
+                            Ver en GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/js.webp" alt="">
+                    <div class="overlay">
+                        <h3>Sistema de notas</h3>
+                        <p>Tecnologías: JavaScript - HTML5 - CSS3</p>
+                        <a class="text-white" href="https://github.com/RengoQG/NOTAS" target="_blank" rel="noopener noreferrer">
+                            Ver en GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/PYTHON.png" alt="">
+                    <div class="overlay">
+                        <h3>Sistema de rutas</h3>
+                        <p>Tecnologías: Python - Django - HTML5 - CSS3</p>
+                        <a class="text-white" href="https://github.com/RengoQG/back-end" target="_blank" rel="noopener noreferrer">
+                            Ver en GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/3256648bb6.js" crossorigin="anonymous"></script>
+</body>
+</html>
